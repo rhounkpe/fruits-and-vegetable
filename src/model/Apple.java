@@ -1,5 +1,28 @@
 package model;
 
+import model.Color;
+import model.TinySeeds;
+
 public class Apple extends TinySeeds {
-    Color color;
+    private Color color;
+
+
+    public Apple(int weight, Color color) {
+        super(weight);
+
+        this.color = color;
+    }
+
+    public Color getColor() {
+        return color;
+    }
+
+    public void setColor(Color color) {
+        this.color = color;
+    }
+
+    @Override
+    public String toString() {
+        return "Color: " + color + "\nWeight: " + weight + "\n";
+    }
 }
