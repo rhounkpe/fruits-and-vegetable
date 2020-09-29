@@ -1,5 +1,5 @@
 package model;
 
-public class Apple {
+public class Apple extends TinySeeds {
     Color color;
 }

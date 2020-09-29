@@ -1,5 +1,5 @@
 package model;
 
-public class Avocado {
+public class Avocado extends LargeSeed {
     boolean hybrid;
 }

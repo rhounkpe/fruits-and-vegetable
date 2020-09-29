@@ -1,4 +1,4 @@
 package model;
 
-public class TinySeeds {
+public class TinySeeds extends Fruit {
 }
