@@ -26,22 +26,26 @@ public class Main {
         basket = Arrays.asList(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10);
 
 
-        basket.sort(new Comparator<Apple>() {
-            @Override
-            public int compare(Apple a1, Apple a2) {
-                return (Integer.compare(a1.getWeight(), a2.getWeight()));
-            }
-        });
         /*
+            basket.sort(new Comparator<Apple>() {
+                @Override
+                public int compare(Apple a1, Apple a2) {
+                    return (Integer.compare(a1.getWeight(), a2.getWeight()));
+                }
+            });
+         */
+
+/*
         basket.sort(new Comparator<Apple>() {
             @Override
             public int compare(Apple a1, Apple a2) {
-                return (a1.getWeight() < a2.getWeight() ? -1 :
-                        (a1.getWeight() == a2.getWeight() ? 0 : 1));
+                return a1.getColor().compareTo(a2.getColor());
             }
         });
+*/
+        // Java 8 method references
+        basket.sort(Comparator.comparing(Apple::getColor));
 
-         */
 
         System.out.println(basket);
 

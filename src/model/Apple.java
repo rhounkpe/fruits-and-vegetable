@@ -25,4 +25,7 @@ public class Apple extends TinySeeds {
     public String toString() {
         return "Color: " + color + "\nWeight: " + weight + "\n";
     }
+
+    //TODO: Implement a comparator of Apple here
+
 }
