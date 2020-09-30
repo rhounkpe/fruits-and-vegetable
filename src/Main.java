@@ -2,7 +2,9 @@ import model.Apple;
 import model.Color;
 
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 
 public class Main {
@@ -20,8 +22,22 @@ public class Main {
         Apple a10 = new Apple(7, Color.RED);
 
 
-        List<Apple> panier = Arrays.asList(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10);
+        List<Apple> basket = new ArrayList<>();
+        basket = Arrays.asList(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10);
 
+        basket.sort(new Comparator<Apple>() {
+            @Override
+            public int compare(Apple a1, Apple a2) {
+                return (a1.getWeight() < a2.getWeight() ? -1 :
+                        (a1.getWeight() == a2.getWeight() ? 0 : 1));
+            }
+        });
+
+        System.out.println(basket);
 
     }
+
+    //TODO: Write a method to pretty print baskets or lists of fruits
+
+    // [Color: GREEN Weight: 10
 }
