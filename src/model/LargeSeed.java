@@ -1,6 +1,6 @@
 package model;
 
-public class LargeSeed extends Fruit {
+public abstract class LargeSeed extends Fruit {
     public LargeSeed(int weight) {
         super(weight);
     }
