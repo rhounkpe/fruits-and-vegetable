@@ -25,6 +25,14 @@ public class Main {
         List<Apple> basket = new ArrayList<>();
         basket = Arrays.asList(a1,a2,a3,a4,a5,a6,a7,a8,a9,a10);
 
+
+        basket.sort(new Comparator<Apple>() {
+            @Override
+            public int compare(Apple a1, Apple a2) {
+                return (Integer.compare(a1.getWeight(), a2.getWeight()));
+            }
+        });
+        /*
         basket.sort(new Comparator<Apple>() {
             @Override
             public int compare(Apple a1, Apple a2) {
@@ -32,6 +40,8 @@ public class Main {
                         (a1.getWeight() == a2.getWeight() ? 0 : 1));
             }
         });
+
+         */
 
         System.out.println(basket);
 
