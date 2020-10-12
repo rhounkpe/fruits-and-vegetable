@@ -1,6 +1,6 @@
 package model;
 
-public abstract class Fruit {
+public abstract class Fruit extends VeganFood {
     protected int weight;
 
     public Fruit(int weight) {

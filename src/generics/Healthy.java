@@ -1,2 +1,6 @@
-package generics;public interface Healthy {
+package generics;
+
+import model.Fruit;
+
+public interface Healthy {
 }

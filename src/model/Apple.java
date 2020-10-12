@@ -1,8 +1,5 @@
 package model;
 
-import model.Color;
-import model.TinySeeds;
-
 public class Apple extends TinySeeds {
     private Color color;
 
